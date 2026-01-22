@@ -87,7 +87,7 @@ a:hover{opacity:.92}
 }
 
 h1{
-  font-size:32px;
+  font-size:44px;
   line-height:1.08;
   margin:0 0 14px;
 }
@@ -110,23 +110,21 @@ h1{
   gap:16px;
 }
 
+/* Section headings (accent + underline) */
 h2{
   font-size:22px;
   margin:0 0 16px;
-}
-
-.section h2 {
   color: var(--accent);
 }
 
-.section h2::after {
-  content: "";
-  display: block;
-  width: 28px;
-  height: 2px;
-  margin-top: 6px;
-  background: var(--accent);
-  opacity: 0.6;
+h2::after{
+  content:"";
+  display:block;
+  width:28px;
+  height:2px;
+  margin-top:6px;
+  background:var(--accent);
+  opacity:.6;
 }
 
 /* ---------------- BUTTONS ---------------- */
@@ -147,6 +145,7 @@ h2{
   border:1px solid var(--border);
   background: rgba(122,162,255,.16);
   color:var(--text);
+  letter-spacing:.2px;
   transition:
     transform .15s ease,
     box-shadow .15s ease,
@@ -171,39 +170,41 @@ h2{
   box-shadow:0 10px 30px rgba(122,162,255,.35);
 }
 
-/* Ghost buttons */
+/* Ghost buttons (Email etc.) - upgraded */
 .btn-ghost{
-  background: transparent;
-  color:var(--muted);
+  background: rgba(255,255,255,.03);
+  color: var(--muted);
+  border-color: rgba(255,255,255,.12);
 }
 
 .btn-ghost:hover{
-  color:var(--text);
-  border-color: rgba(255,255,255,.18);
+  background: rgba(255,255,255,.08);
+  color: var(--text);
+  border-color: rgba(255,255,255,.25);
 }
 
-/* LinkedIn button */
+/* LinkedIn button - premium secondary */
 .btn-linkedin{
-  background: rgba(10,102,194,.15);
+  background: rgba(10,102,194,.12);
   border-color: rgba(10,102,194,.35);
-  color:#66b3ff;
+  color:#9cc7ff;
 }
 
 .btn-linkedin:hover{
-  background: rgba(10,102,194,.25);
-  box-shadow:0 8px 20px rgba(10,102,194,.35);
+  background: rgba(10,102,194,.22);
+  box-shadow:0 6px 18px rgba(10,102,194,.35);
 }
 
-/* GitHub button */
+/* GitHub button - neutral secondary */
 .btn-github{
-  background: rgba(255,255,255,.06);
-  border-color: rgba(255,255,255,.2);
+  background: rgba(255,255,255,.05);
+  border-color: rgba(255,255,255,.18);
   color:#e6edf3;
 }
 
 .btn-github:hover{
-  background: rgba(255,255,255,.12);
-  box-shadow:0 8px 20px rgba(0,0,0,.35);
+  background: rgba(255,255,255,.10);
+  box-shadow:0 6px 18px rgba(0,0,0,.45);
 }
 
 /* Focus accessibility */

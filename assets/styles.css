@@ -41,8 +41,8 @@ a:hover{opacity:.92}
 .nav-links a:hover{color:var(--text)}
 
 .hero{padding:58px 0 18px}
-.kicker{color:var(--muted); margin:0 0 14px; letter-spacing:.22em; text-transform:uppercase; font-size:16px}
-h1{font-size:40px; line-height:1.08; margin:0 0 14px}
+.kicker{color:var(--muted); margin:0 0 16px; letter-spacing:.22em; text-transform:uppercase; font-size:16px}
+h1{font-size:36px; line-height:1.08; margin:0 0 14px}
 .subhead{color:var(--muted); font-size:16px; line-height:1.7; max-width:780px}
 
 .section{padding:38px 0}

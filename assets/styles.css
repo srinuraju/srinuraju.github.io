@@ -125,3 +125,27 @@ h2{font-size:22px; margin:0 0 16px}
   .card{grid-column: span 12}
   .skill-block{grid-column: span 12}
 }
+
+/* LinkedIn button */
+.btn-linkedin {
+  background: rgba(10, 102, 194, 0.15);
+  border-color: rgba(10, 102, 194, 0.35);
+  color: #0a66c2;
+}
+
+.btn-linkedin:hover {
+  background: rgba(10, 102, 194, 0.25);
+  box-shadow: 0 8px 20px rgba(10, 102, 194, 0.35);
+}
+
+/* GitHub button */
+.btn-github {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #e6edf3;
+}
+
+.btn-github:hover {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}

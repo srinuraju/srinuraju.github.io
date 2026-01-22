@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <title>Srinivasa Raju — Data Engineer</title>
-  <meta name="description" content="Srinivasa Raju — Data Engineer. Batch & incremental pipelines using Spark, SQL, Python, and AWS." />
+  <title>Srinivasa Raju — Data Engineering</title>
+  <meta name="description" content="Srinivasa Raju — Data Engineering. Batch & incremental pipelines using Spark, SQL, Python, and AWS." />
 
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
@@ -17,29 +17,53 @@
       <a class="brand" href="/">Srinivasa Raju</a>
       <nav class="nav-links">
         <a href="#aboutme">About</a>
-        <a class="btn btn-ghost" href="/projects/">Case Studies</a>
+        <a href="#projects">Case Studies</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <a class="btn btn-ghost" href="/projects/">View all</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
+    <!-- HERO -->
     <section class="hero">
-      <p class="kicker">Data Engineer</p>
+      <p class="kicker">Data Engineering</p>
       <h1>Build reliable data pipelines and deliver analytics-ready datasets</h1>
-
       <p class="subhead">
-        I design and operate batch data pipelines and curated datasets using Spark, SQL, Python, and AWS, with a focus on reliability, data quality, and observability.
-        <br />
-        Focus areas: batch pipelines, incremental processing, and analytics data models.
+        I design and operate batch and incremental data pipelines using Spark, SQL, Python, and AWS, with a focus on reliability, data quality, and observability.
+        <br/>Focus areas: Batch pipelines, Incremental processing, Analytics data models
       </p>
 
       <div class="cta">
-        <!-- Later: href="/resume/srinu-resume.pdf" -->
-        <a class="btn btn-primary" href="#" onclick="alert('Resume (PDF)'); return false;">Resume (PDF)</a>
-        <a class="btn btn-linkedin" href="https://linkedin.com/in/kallepalliraju" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="btn btn-github" href="https://github.com/srinuraju" target="_blank" rel="noreferrer">GitHub</a>
+        <!-- Resume: update link when PDF is ready -->
+        <a class="btn btn-primary" href="#" onclick="alert('Resume PDF coming soon'); return false;">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 2h7l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V8h4.5"/>
+          </svg>
+          Resume
+        </a>
+
+        <a class="btn btn-linkedin" href="https://linkedin.com/in/kallepalliraju" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.98 3.5A2.48 2.48 0 1 1 5 8.46a2.48 2.48 0 0 1-.02-4.96zM3 21h4V9H3v12zm7.5-12H14v1.64h.06c.48-.9 1.65-1.84 3.4-1.84 3.64 0 4.31 2.4 4.31 5.51V21h-4v-5.2c0-1.24-.03-2.83-1.73-2.83-1.73 0-2 1.35-2 2.74V21h-4V9z"/>
+          </svg>
+          LinkedIn
+        </a>
+
+        <a class="btn btn-github" href="https://github.com/srinuraju" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.78.5 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.27.82-.6v-2.12c-3.34.74-4.04-1.45-4.04-1.45-.55-1.44-1.34-1.82-1.34-1.82-1.1-.78.08-.77.08-.77 1.22.09 1.86 1.28 1.86 1.28 1.08 1.9 2.83 1.35 3.52 1.03.11-.81.42-1.35.76-1.66-2.67-.31-5.47-1.36-5.47-6.05 0-1.34.46-2.44 1.23-3.3-.12-.31-.53-1.56.12-3.25 0 0 1.01-.33 3.3 1.26a11.2 11.2 0 0 1 6 0c2.28-1.59 3.29-1.26 3.29-1.26.65 1.69.24 2.94.12 3.25.77.86 1.23 1.96 1.23 3.3 0 4.7-2.81 5.74-5.49 6.04.43.38.82 1.13.82 2.28v3.38c0 .33.22.72.83.6 4.77-1.56 8.2-5.96 8.2-11.16C23.5 5.78 18.35.5 12 .5z"/>
+          </svg>
+          GitHub
+        </a>
+
+        <a class="btn btn-email" href="mailto:ksraju414@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5zm2 .5v.2l8 5.3 8-5.3v-.2H4zm16 2.8-8 5.2-8-5.2V19h16V8.3z"/>
+          </svg>
+          Email
+        </a>
       </div>
 
       <div class="chips">
@@ -52,14 +76,21 @@
       </div>
     </section>
 
-    <!-- ✅ Added: About Me section so the nav link works -->
+    <!-- ABOUT -->
     <section id="aboutme" class="section">
       <h2>About</h2>
-      <p class="muted">
-        I’m an experienced IT professional with 10+ years in the industry, including 4 years working in the Big Data (ETL) domain at AWS. My work involves building, operating, and supporting batch and incremental data pipelines using Spark, SQL, and Python, with a strong focus on reliability, data quality, and observability. I specialize in data platforms built on AWS Glue, Athena, and Managed Workflows for Apache Airflow (MWAA), and I have deep experience diagnosing and resolving issues in distributed systems to ensure production stability and performance.
+      <p class="muted" style="max-width: 850px; line-height: 1.7;">
+        I’m an experienced IT professional with 10+ years in the industry, including 4 years working in the Big Data (ETL) domain at AWS.
+        My work involves building, operating, and supporting batch and incremental data pipelines using Spark, SQL, Python, and AWS, with a strong
+        focus on reliability, data quality, and observability.
+      </p>
+      <p class="muted" style="max-width: 850px; line-height: 1.7; margin-top: 10px;">
+        I specialize in data platforms built on AWS Glue, Athena, and Managed Workflows for Apache Airflow (MWAA), and I have deep experience
+        diagnosing and resolving issues in distributed systems to ensure production stability and performance.
       </p>
     </section>
 
+    <!-- CASE STUDIES -->
     <section id="projects" class="section">
       <div class="section-head">
         <h2>Data Engineering Case Studies</h2>
@@ -108,6 +139,7 @@
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="section">
       <h2>Skills</h2>
       <div class="skills">
@@ -115,44 +147,66 @@
           <h4>Languages</h4>
           <p>SQL, Python, Scala</p>
         </div>
+
         <div class="skill-block">
           <h4>Data Processing</h4>
           <p>Apache Spark, Databricks, AWS Glue, EMR</p>
         </div>
+
         <div class="skill-block">
           <h4>Orchestration</h4>
           <p>Apache Airflow/MWAA, AWS Step Functions</p>
         </div>
+
         <div class="skill-block">
           <h4>Storage</h4>
-          <p>S3, Parquet, open table formats (Delta Lake/Iceberg/Hudi), JSON/CSV, Avro/ORC</p>
+          <p>S3, Parquet, open table formats (Iceberg/Hudi/Delta Lake), Avro/ORC, JSON/CSV</p>
         </div>
+
         <div class="skill-block">
           <h4>Streaming</h4>
           <p>Apache Kafka (event ingestion, basic stream processing)</p>
         </div>
+
         <div class="skill-block">
           <h4>Datastores</h4>
-          <p> Snowflake, Redshift, DynamoDB</p>
+          <p>Amazon DynamoDB, analytics warehouses (Redshift/Snowflake)</p>
         </div>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <h2>Contact</h2>
       <p class="muted">Virginia/DC area • Open to remote opportunities</p>
 
       <div class="cta">
-        <a class="btn btn-email" href="mailto:ksraju414@gmail.com">Email</a>
-        <a class="btn btn-linkedin" href="https://linkedin.com/in/kallepalliraju" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="btn btn-github" href="https://github.com/srinuraju" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn-email" href="mailto:ksraju414@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5zm2 .5v.2l8 5.3 8-5.3v-.2H4zm16 2.8-8 5.2-8-5.2V19h16V8.3z"/>
+          </svg>
+          Email
+        </a>
+
+        <a class="btn btn-linkedin" href="https://linkedin.com/in/kallepalliraju" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.98 3.5A2.48 2.48 0 1 1 5 8.46a2.48 2.48 0 0 1-.02-4.96zM3 21h4V9H3v12zm7.5-12H14v1.64h.06c.48-.9 1.65-1.84 3.4-1.84 3.64 0 4.31 2.4 4.31 5.51V21h-4v-5.2c0-1.24-.03-2.83-1.73-2.83-1.73 0-2 1.35-2 2.74V21h-4V9z"/>
+          </svg>
+          LinkedIn
+        </a>
+
+        <a class="btn btn-github" href="https://github.com/srinuraju" target="_blank" rel="noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.78.5 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.27.82-.6v-2.12c-3.34.74-4.04-1.45-4.04-1.45-.55-1.44-1.34-1.82-1.34-1.82-1.1-.78.08-.77.08-.77 1.22.09 1.86 1.28 1.86 1.28 1.08 1.9 2.83 1.35 3.52 1.03.11-.81.42-1.35.76-1.66-2.67-.31-5.47-1.36-5.47-6.05 0-1.34.46-2.44 1.23-3.3-.12-.31-.53-1.56.12-3.25 0 0 1.01-.33 3.3 1.26a11.2 11.2 0 0 1 6 0c2.28-1.59 3.29-1.26 3.29-1.26.65 1.69.24 2.94.12 3.25.77.86 1.23 1.96 1.23 3.3 0 4.7-2.81 5.74-5.49 6.04.43.38.82 1.13.82 2.28v3.38c0 .33.22.72.83.6 4.77-1.56 8.2-5.96 8.2-11.16C23.5 5.78 18.35.5 12 .5z"/>
+          </svg>
+          GitHub
+        </a>
       </div>
 
       <div class="footer-note">
-        <p><strong>Work Authorization:</strong> Authorized to work in the U.S; open to full-time or contract roles with standard H-1B sponsorship.</p>
+        <p><strong>Work Authorization:</strong> Authorized to work in the U.S.; open to full-time or contract roles with standard H-1B sponsorship.</p>
       </div>
     </section>
   </main>
-
 </body>
 </html>

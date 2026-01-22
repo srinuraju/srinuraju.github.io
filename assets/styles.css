@@ -165,12 +165,12 @@ h2::after{
 
 /* Email – solid neutral */
 .btn-email{
-  background: linear-gradient(135deg, rgba(150,150,150,.95), rgba(120,120,120,.9));
-  color:#0b0f14;
+  background: linear-gradient(135deg, rgba(45,212,191,.95), rgba(20,184,166,.9));
+  color:#022c22;
 }
 
 .btn-email:hover{
-  box-shadow:0 8px 24px rgba(160,160,160,.35);
+  box-shadow:0 8px 24px rgba(45,212,191,.45);
 }
 
 /* LinkedIn – solid blue */
@@ -185,12 +185,12 @@ h2::after{
 
 /* GitHub – solid dark */
 .btn-github{
-  background: linear-gradient(135deg, rgba(36,41,46,.95), rgba(24,27,30,.9));
+  background: linear-gradient(135deg, rgba(139,92,246,.95), rgba(109,40,217,.9));
   color:#ffffff;
 }
 
 .btn-github:hover{
-  box-shadow:0 8px 24px rgba(0,0,0,.55);
+  box-shadow:0 8px 24px rgba(139,92,246,.45);
 }
 
 /* Focus accessibility */

@@ -115,6 +115,20 @@ h2{
   margin:0 0 16px;
 }
 
+.section h2 {
+  color: var(--accent);
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  margin-top: 6px;
+  background: var(--accent);
+  opacity: 0.6;
+}
+
 /* ---------------- BUTTONS ---------------- */
 
 .cta{

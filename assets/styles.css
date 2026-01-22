@@ -42,7 +42,7 @@ a:hover{opacity:.92}
 
 .hero{padding:58px 0 18px}
 .kicker{color:var(--muted); margin:0 0 14px; letter-spacing:.22em; text-transform:uppercase; font-size:16px}
-h1{font-size:32px; line-height:1.08; margin:0 0 14px}
+h1{font-size:44px; line-height:1.08; margin:0 0 14px}
 .subhead{color:var(--muted); font-size:16px; line-height:1.7; max-width:780px}
 
 .section{padding:38px 0}
@@ -57,9 +57,27 @@ h2{font-size:22px; margin:0 0 16px}
   border:1px solid var(--border);
   background: rgba(122,162,255,.16);
   color:var(--text);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease, color .15s ease;
 }
-.btn:hover{transform: translateY(-1px); transition: .15s ease}
-.btn-ghost{background: transparent}
+.btn:hover{transform: translateY(-1px);}
+
+.btn-ghost{
+  background: transparent;
+  color: var(--muted);
+}
+.btn-ghost:hover{
+  color: var(--text);
+  border-color: rgba(255,255,255,.18);
+}
+
+/* Accessible focus */
+.btn:focus-visible,
+.nav-links a:focus-visible,
+.brand:focus-visible{
+  outline: 2px solid rgba(122,162,255,.6);
+  outline-offset: 3px;
+  border-radius: 999px;
+}
 
 .chips{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px}
 .chip{
@@ -88,7 +106,10 @@ h2{font-size:22px; margin:0 0 16px}
   flex-direction:column;
   justify-content:space-between;
 }
-.card:hover{border-color: rgba(122,162,255,.25); transition:.2s ease}
+.card:hover{
+  border-color: rgba(122,162,255,.25);
+  transition:.2s ease;
+}
 .card-top h3{margin:0; font-size:16px}
 .meta{margin:7px 0 0; color:var(--muted); font-size:13px}
 
@@ -132,7 +153,6 @@ h2{font-size:22px; margin:0 0 16px}
   border-color: rgba(10, 102, 194, 0.35);
   color: #0a66c2;
 }
-
 .btn-linkedin:hover {
   background: rgba(10, 102, 194, 0.25);
   box-shadow: 0 8px 20px rgba(10, 102, 194, 0.35);
@@ -144,7 +164,6 @@ h2{font-size:22px; margin:0 0 16px}
   border-color: rgba(255, 255, 255, 0.2);
   color: #e6edf3;
 }
-
 .btn-github:hover {
   background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);

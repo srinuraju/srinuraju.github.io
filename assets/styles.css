@@ -9,6 +9,9 @@
   --shadow: 0 12px 32px rgba(0,0,0,.35);
   --radius:16px;
   --max: 1040px;
+  --accent-blue: #7aa2ff;
+  --accent-green: #4fd1c5;
+  --accent-orange: #f6ad55;
 }
 
 *{box-sizing:border-box}
@@ -124,4 +127,6 @@ h2{font-size:22px; margin:0 0 16px}
   h1{font-size:36px}
   .card{grid-column: span 12}
   .skill-block{grid-column: span 12}
+  .section h2 {
+  color: var(--accent-blue);
 }

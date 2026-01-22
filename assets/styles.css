@@ -6,6 +6,7 @@
   --muted:#9aa7b2;
   --border:rgba(255,255,255,.08);
   --accent:#7aa2ff;
+  --primary:#22d3ee;
   --shadow: 0 12px 32px rgba(0,0,0,.35);
   --radius:16px;
   --max: 1040px;
@@ -155,12 +156,12 @@ h2::after{
 
 /* Resume – primary */
 .btn-primary{
-  background: linear-gradient(135deg, rgba(122,162,255,.95), rgba(95,133,255,.92));
-  color:#0b0f14;
+  background: linear-gradient(135deg, rgba(34,211,238,.95), rgba(14,165,233,.9));
+  color:#022c22;
 }
 
 .btn-primary:hover{
-  box-shadow:0 10px 30px rgba(122,162,255,.35);
+  box-shadow:0 10px 30px rgba(34,211,238,.45);
 }
 
 /* Email – solid neutral */
@@ -185,12 +186,12 @@ h2::after{
 
 /* GitHub – solid dark */
 .btn-github{
-  background: linear-gradient(135deg, rgba(139,92,246,.95), rgba(109,40,217,.9));
-  color:#ffffff;
+  background: linear-gradient(135deg, rgba(96,165,250,.95), rgba(59,130,246,.9));
+  color:#0b0f14;
 }
 
 .btn-github:hover{
-  box-shadow:0 8px 24px rgba(139,92,246,.45);
+  box-shadow:0 8px 24px rgba(96,165,250,.45);
 }
 
 /* Focus accessibility */

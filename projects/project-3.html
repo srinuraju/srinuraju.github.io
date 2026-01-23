@@ -1,58 +1,57 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project 3 — Srinu</title>
-  <link rel="stylesheet" href="/assets/styles.css" />
-</head>
-<body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="/">← Home</a>
-      <nav class="nav-links">
-        <a class="btn btn-ghost" href="/projects/">All projects</a>
-      </nav>
-    </div>
-  </header>
+<h2>Project 3 — Data Quality, Monitoring & Pipeline Observability</h2>
 
-  <main class="container" style="padding:32px 0;">
-    <p class="kicker">Project</p>
-    <h1 style="font-size:34px;">Project Title</h1>
-    <p class="subhead">One-line summary: what it does + why it matters.</p>
+<h3>Context</h3>
+<p>
+  This project focused on improving data quality and observability across batch data pipelines,
+  with the goal of detecting issues early and reducing operational surprises in production.
+</p>
 
-    <section class="section">
-      <h2>Stack</h2>
-      <p class="muted">Python • SQL • Spark • AWS (S3, Glue, Airflow/MWAA)</p>
-    </section>
+<h3>What needed to be solved</h3>
+<p>
+  Data issues were often detected downstream, after reports were already impacted.
+  Failures were visible, but data correctness issues such as partial loads, schema drift,
+  or unexpected volume changes were harder to catch proactively.
+</p>
 
-    <section class="section">
-      <h2>What I built</h2>
-      <ul class="bullets">
-        <li>Bullet 1 (system/pipeline)</li>
-        <li>Bullet 2 (incremental loads, modeling, etc.)</li>
-        <li>Bullet 3 (performance/cost/reliability)</li>
-      </ul>
-    </section>
+<h3>How quality checks were implemented</h3>
+<ul class="bullets">
+  <li>Defined baseline expectations for schema, volume, and freshness.</li>
+  <li>Added validation steps as part of pipeline execution.</li>
+  <li>Used <strong>SQL-based checks</strong> in Athena to validate key assumptions.</li>
+  <li>Ensured checks ran before downstream datasets were published.</li>
+</ul>
 
-    <section class="section">
-      <h2>Reliability & quality</h2>
-      <ul class="bullets">
-        <li>Idempotency, retries, backfills</li>
-        <li>Schema/freshness/volume checks</li>
-        <li>Monitoring + alerts + runbook</li>
-      </ul>
-    </section>
+<h3>Monitoring and alerting</h3>
+<ul class="bullets">
+  <li>Pipeline failures and validation errors surfaced through alerts.</li>
+  <li>Missing or delayed partitions flagged as potential SLA risks.</li>
+  <li>Logs centralized to support faster root-cause analysis.</li>
+</ul>
 
-    <section class="section">
-      <h2>Tradeoffs</h2>
-      <p class="muted">Short honest decisions: why this tool/approach, what you’d change next.</p>
-    </section>
+<h3>Operating in production</h3>
+<ul class="bullets">
+  <li>Runbooks documented common data quality and pipeline issues.</li>
+  <li>Clear escalation paths established for data incidents.</li>
+  <li>Reduced reliance on manual checks and downstream detection.</li>
+</ul>
 
-    <section class="section">
-      <h2>Links</h2>
-      <p class="muted">GitHub: <a href="#" target="_blank" rel="noreferrer">repo link</a></p>
-    </section>
-  </main>
-</body>
-</html>
+<h3>Impact on reliability</h3>
+<ul class="bullets">
+  <li>Earlier detection of data issues before they reached consumers.</li>
+  <li>Improved confidence in downstream analytics and reports.</li>
+  <li>Lower operational overhead during on-call and support rotations.</li>
+</ul>
+
+<h3>Outcome</h3>
+<p>
+  The addition of structured data quality checks and monitoring improved overall pipeline reliability.
+  Issues were detected closer to the source, reducing downstream rework and increasing trust
+  in published datasets.
+</p>
+
+<h3>What I’d improve next</h3>
+<ul class="bullets">
+  <li>Introduce dataset-level SLAs with automated tracking.</li>
+  <li>Expand anomaly detection beyond basic volume checks.</li>
+  <li>Add lineage visibility to better understand downstream impact.</li>
+</ul>

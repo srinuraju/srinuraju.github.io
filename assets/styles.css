@@ -328,3 +328,21 @@ h2::after{
   .card{grid-column: span 12}
   .skill-block{grid-column: span 12}
 }
+/* ---------------- ICON-ONLY BUTTONS ---------------- */
+
+.btn.icon-only{
+  width:44px;
+  height:44px;
+  padding:0;
+  border-radius:999px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.btn.icon-only svg{
+  width:18px;
+  height:18px;
+  margin:0;
+  fill: currentColor;
+}
